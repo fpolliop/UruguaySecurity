@@ -1,3 +1,4 @@
+require 'dotenv/load'
 require 'sinatra'
 require 'sendgrid-ruby'
 
@@ -18,13 +19,14 @@ end
 post '/contact_us' do
   from = Email.new(email: params[:email])
   subject = 'Presupuestación desde la web'
-  to = Email.new(email: ENV['CONTACT_FORM_EMAIL'])
+  to = Email.new(email: 'uruguay.security@mailinator.com')
 
   locals_for_mailer = {
     name: params[:name],
     email: params[:email],
     phone: params[:phone],
-    comment: params[:comment]
+    comment: params[:comment],
+    purpose: params[:purpose]
   }
 
   content = Content.new(type: 'text/html', value: erb(:mailer, locals: locals_for_mailer))

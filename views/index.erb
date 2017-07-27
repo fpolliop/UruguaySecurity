@@ -183,63 +183,54 @@ End Contact Us
         </div>
         <br/>
       </div>
-      <!-- contact form -->
-       <!--<div class="col-lg-8 col-md-4 col-sm-7 col-xs-12 wow fadeInDown animated" data-wow-duration="500ms" data-wow-delay="300ms">-->
-        <div class="col-md-6 col-sm-6 col-xs-12 wow fadeInUp animated" data-wow-duration="500ms">
-         <div class="contact-form">
-           <h4>Contactenos</h4><br/>
-           <div class = "input-group">
-             <input type="text" name="Nombre" id="name" placeholder="Nombre" class="form-control">
-           </div>
 
-           <div class="input-group">
-             <div class="input-field">
-               <input type="email" name="Email" id="email" placeholder="Email" class="form-control">
-             </div>
-             <div class="input-field">
-               <input type="number" name="Number" id="number" placeholder="Numero de Telefono" class="form-control">
-             </div>
-           </div>
-           <div class="input-group">
-             <textarea name="Mensaje" id="message" placeholder="Mensaje" class="form-control"></textarea>
-           </div>
-           <div>
-           <div style="width:400px; float:left;">
-             <input type="radio" name="messagePurpose" value="budget"> Solicitar Presupuesto
-             <input type="radio" name="messagePurpose" value="survey"> Solicitar Relevamiento
-             <input type="radio" name="messagePurpose" value="others"> Otros
-           </div>
-           <div style="width:150px; float:right">
-             <br/>
-             <input type="submit" id="form-submit" class="form-control" style="color:white; font-variant: bold; float:right" value="Enviar">
-             <label class="input-group pull-left" id="messageSent"></label>
-           </div>
-           </div>
-           <!--<div>
-           <div style="width:200px; float:left;">
-             <input type="radio" name="messagePurpose" value="budget"> Solicitar Presupuesto
-             <input type="radio" name="messagePurpose" value="survey"> Solicitar Relevamiento
-             <input type="radio" name="messagePurpose" value="others"> Otros
-           </div>
-           <div style="width:150px; float:right">
-             <br/>
-             <input type="submit" id="form-submit" class="form-control" style="color:white; font-variant: bold; float:right" value="Enviar">
-             <label class="input-group pull-left" id="messageSent"></label>
-           </div>
-           </div>-->
-         </div>
+      <!-- contact form -->
+      <div class="col-md-6 col-sm-6 col-xs-12 wow fadeInUp animated" data-wow-duration="500ms">
+        <div class="contact-form">
+          <h4>Contactenos</h4><br/>
+          <form id="contact-form" action="/contact_us" method="post">
+            <div class="input-group">
+              <input type="text" name="name" id="name" placeholder="Nombre" class="form-control">
+            </div>
+
+            <div class="input-group">
+              <div class="input-field">
+                <input type="email" name="email" id="email" placeholder="Email" class="form-control">
+              </div>
+              <div class="input-field">
+                <input type="text" name="phone" id="number" placeholder="Numero de Telefono" class="form-control">
+              </div>
+            </div>
+          <div class="input-group">
+            <textarea name="comment" id="message" placeholder="Mensaje" class="form-control"></textarea>
+          </div>
+          <div>
+            <div style="width:400px; float:left;">
+              <input type="radio" name="purpose" value="budget"> Solicitar Presupuesto
+              <input type="radio" name="purpose" value="survey"> Solicitar Relevamiento
+              <input type="radio" name="purpose" value="others"> Otros
+            </div>
+            <div style="width:150px; float:right">
+              <br/>
+              <input type="submit" id="form-submit" class="form-control" style="color:white; font-variant: bold; float:right" value="Enviar">
+              <label class="input-group pull-left" id="messageSent"></label>
+            </div>
+          </div>
+        </form>
        </div>
-       <div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp animated" data-wow-duration="500ms">
-       </br></br>
-       <ul class="contacts">
-         <li><i class="fa fa-map-marker"></i> Gral. French 1738, Montevideo, Uruguay</li>
-         <li><a href="tel:+59826018577"><i class="fa fa-phone"></i> +598 2601 85 77</a></li>
-         <li><a href="mailto:info@uruguaysecurity.com.uy"><i class="fa fa-envelope"></i> info@uruguaysecurity.com.uy</a></li>
-         <li><a href="https://www.facebook.com/UruSec"><i class="fa fa-facebook"></i>  Uruguay Security</a></li>
-       </ul>
      </div>
-       <!-- end contact form -->
-      <!-- /.col -->
+
+     <div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp animated" data-wow-duration="500ms">
+     </br></br>
+     <ul class="contacts">
+       <li><i class="fa fa-map-marker"></i> Gral. French 1738, Montevideo, Uruguay</li>
+       <li><a href="tel:+59826018577"><i class="fa fa-phone"></i> +598 2601 85 77</a></li>
+       <li><a href="mailto:info@uruguaysecurity.com.uy"><i class="fa fa-envelope"></i> info@uruguaysecurity.com.uy</a></li>
+       <li><a href="https://www.facebook.com/UruSec"><i class="fa fa-facebook"></i>  Uruguay Security</a></li>
+     </ul>
+   </div>
+   <!-- end contact form -->
+   <!-- /.col -->
 
     <div class="row">
       <div class="col-md-12" style="height:25px">
@@ -251,91 +242,3 @@ End Contact Us
   </div>
 </footer>
 <a href="javascript:void(0);" id="back-top"><i class="fa fa-angle-up fa-3x"></i></a>
-<!-- Essential jQuery Plugins
-================================================== -->
-<!-- Main jQuery -->
-<script src="js/jquery-1.11.1.min.js"></script>
-<!-- Single Page Nav -->
-<script src="js/jquery.singlePageNav.min.js"></script>
-<!-- Twitter Bootstrap -->
-<script src="js/bootstrap.min.js"></script>
-<!-- jquery.fancybox.pack -->
-<script src="js/jquery.fancybox.pack.js"></script>
-<!-- jquery.mixitup.min -->
-<script src="js/jquery.mixitup.min.js"></script>
-<!-- jquery.parallax -->
-<script src="js/jquery.parallax-1.1.3.js"></script>
-<!-- jquery.countTo -->
-<script src="js/jquery-countTo.js"></script>
-<!-- jquery.appear -->
-<script src="js/jquery.appear.js"></script>
-<!-- Contact form validation -->
-<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery.form/3.32/jquery.form.js"></script>
-<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.11.1/jquery.validate.min.js"></script>
-<!-- Google Map -->
-<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
-<!-- jquery easing -->
-<script src="js/jquery.easing.min.js"></script>
-<!-- jquery easing -->
-<script src="js/wow.min.js"></script>
-<script>
-var wow = new WOW({
-  boxClass: 'wow', // animated element css class (default is wow)
-  animateClass: 'animated', // animation css class (default is animated)
-  offset: 120, // distance to the element when triggering the animation (default is 0)
-  mobile: false, // trigger animations on mobile devices (default is true)
-  live: true // act on asynchronously loaded content (default is true)
-});
-wow.init();
-</script>
-<!-- Custom Functions -->
-<script src="js/custom.js"></script>
-<script type="text/javascript">
-$(function() {
-  /* ========================================================================= */
-  /*  Contact Form
-  /* ========================================================================= */
-
-  $('#contact-form').validate({
-    rules: {
-      name: {
-        required: true,
-        minlength: 2
-      },
-      email: {
-        required: true,
-        email: true
-      },
-      number: {
-        required: true
-      },
-      message: {
-        required: true
-      }
-    },
-    messages: {
-      name: {
-        required: "Ingrese su Nombre!",
-        minlength: "Su nombre debe tener al menos 2 caracteres"
-      },
-      email: {
-        required: "Ingrese su Email"
-      },
-      message: {
-        required: "Debe Ingresar un mensaje."
-      }
-    },
-    submitHandler: function(form) {
-      // the message
-      $msg = "First line of text\nSecond line of text";
-
-      // use wordwrap() if lines are longer than 70 characters
-      $msg = wordwrap($msg,70);
-
-      // send email
-      mail("fpolliop@gmail.com","My subject",$msg);
-      $('#messageSent').val("The message has been sent");
-    }
-  });
-});
-</script>
