@@ -29,7 +29,7 @@ post '/contact_us' do
     purpose: params[:purpose]
   }
 
-  content = Content.new(type: 'text/html', value: erb(:mailer, locals: locals_for_mailer))
+  content = Content.new(type: 'text/html', value: erb(:mailer, locals: locals_for_mailer, layout: false))
   mail = Mail.new(from, subject, to, content)
 
   sg = SendGrid::API.new(api_key: ENV['SENDGRID_API_KEY'])
