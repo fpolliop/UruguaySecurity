@@ -1,0 +1,34 @@
+GEM
+  remote: http://rubygems.org/
+  specs:
+    byebug (9.0.6)
+    dotenv (2.2.1)
+    mustermann (1.0.0)
+    rack (2.0.3)
+    rack-protection (2.0.0)
+      rack
+    ruby_http_client (3.1.0)
+    sendgrid-ruby (5.0.0)
+      ruby_http_client (~> 3.0)
+      sinatra (>= 1.4.7, < 3)
+    sinatra (2.0.0)
+      mustermann (~> 1.0)
+      rack (~> 2.0)
+      rack-protection (= 2.0.0)
+      tilt (~> 2.0)
+    tilt (2.0.8)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  byebug
+  dotenv
+  sendgrid-ruby
+  sinatra
+
+RUBY VERSION
+   ruby 2.2.4p230
+
+BUNDLED WITH
+   1.13.6
