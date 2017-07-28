@@ -20,6 +20,7 @@ GEM
 
 PLATFORMS
   ruby
+  x64-mingw32
 
 DEPENDENCIES
   byebug
@@ -28,7 +29,7 @@ DEPENDENCIES
   sinatra
 
 RUBY VERSION
-   ruby 2.2.4p230
+   ruby 2.4.1p111
 
 BUNDLED WITH
-   1.13.6
+   1.15.3
