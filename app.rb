@@ -33,6 +33,10 @@ post '/contact_us' do
   content = Content.new(type: 'text/html', value: erb(:mailer, locals: locals_for_mailer, layout: false))
   mail = Mail.new(from, subject, to, content)
 
+  mail.attachments[params[:chooseFile][:filename]] = {
+    mime_type: params[:chooseFile][:type],
+    content: params[:chooseFile][:tempfile]
+  }
 
   sg = SendGrid::API.new(api_key: ENV['SENDGRID_API_KEY'])
   response = sg.client.mail._('send').post(request_body: mail.to_json)
